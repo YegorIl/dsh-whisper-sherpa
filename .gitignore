@@ -1,0 +1,7 @@
+node_modules/
+*.tgz
+*.log
+speech-to-text/
+dist/
+.vscode/
+.idea/

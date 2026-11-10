@@ -1,0 +1,65 @@
+{
+  "name": "dsh-whisper-sherpa",
+  "version": "0.1.0",
+  "description": "Offline speech-to-text provider for DeepSeek Harness voice input: local Whisper on sherpa-onnx, Russian included, no cloud and no API keys",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "vendor",
+    "sherpa-onnx-win-x64",
+    "LICENSES",
+    "cordis.patch.yml",
+    "LICENSE",
+    "THIRD-PARTY-NOTICES.md",
+    "INSTALL.md",
+    "install.ps1",
+    "README.md",
+    "README.en.md"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "speech-to-text",
+    "voice-input",
+    "whisper",
+    "sherpa-onnx",
+    "offline",
+    "russian"
+  ],
+  "license": "MIT",
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1 <0.3.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YegorIl/dsh-whisper-sherpa.git"
+  },
+  "homepage": "https://github.com/YegorIl/dsh-whisper-sherpa",
+  "bugs": {
+    "url": "https://github.com/YegorIl/dsh-whisper-sherpa/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

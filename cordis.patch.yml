@@ -1,0 +1,6 @@
+- insert:
+    - id: whisper-local
+      name: dsh-whisper-sherpa
+      config:
+        dataRoot: !!js dshHomePath('speech-to-text', 'whisper-local')
+        model: small
